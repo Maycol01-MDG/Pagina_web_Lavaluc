@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="LAVALUC — Lavandería profesional en San Luis, Lima. Lavado al kilo, al seco, planchado, secado y delivery. Av. Canadá 3656."/>
+  <title>LAVALUC | Lavandería Profesional — San Luis, Lima</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ================================================================
+     HEADER
+================================================================ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <a href="#inicio" class="logo">
+      <div class="logo__mark">🧺</div>
+      <span class="logo__text">LAVA<span>LUC</span></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#inicio"    class="nav__link">Inicio</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#precios"   class="nav__link">Precios</a></li>
+        <li><a href="#nosotros"  class="nav__link">Nosotros</a></li>
+        <li><a href="#contacto"  class="nav__link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="https://wa.me/51913474275?text=Hola%20LAVALUC%2C%20deseo%20solicitar%20un%20servicio" target="_blank" class="btn btn--primary btn--sm">
+        📲 Solicitar ahora
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================================================================
+     MENÚ MÓVIL
+================================================================ -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="mobileClose">✕</button>
+  <ul class="mobile-menu__list">
+    <li><a href="#inicio"    class="mobile-menu__link">Inicio</a></li>
+    <li><a href="#servicios" class="mobile-menu__link">Servicios</a></li>
+    <li><a href="#precios"   class="mobile-menu__link">Precios</a></li>
+    <li><a href="#nosotros"  class="mobile-menu__link">Nosotros</a></li>
+    <li><a href="#contacto"  class="mobile-menu__link">Contacto</a></li>
+    <li><a href="https://wa.me/51913474275" target="_blank" class="btn btn--primary mobile-menu__btn">📲 WhatsApp</a></li>
+  </ul>
+</div>
+
+<!-- ================================================================
+     HERO — Fondo foto real con overlay
+================================================================ -->
+<section class="hero" id="inicio">
+  <div class="hero__bg-photo"></div>
+  <div class="hero__bubbles">
+    <div class="hero__bubble"></div>
+    <div class="hero__bubble"></div>
+    <div class="hero__bubble"></div>
+  </div>
+
+  <div class="hero__inner">
+
+    <!-- Columna izquierda -->
+    <div class="hero__content reveal">
+      <div class="hero__eyebrow">Av. Canadá 3656 · San Luis, Lima</div>
+
+      <h1 class="hero__title">
+        Tu ropa limpia,
+        <em>tu tiempo libre</em>
+      </h1>
+
+      <p class="hero__subtitle">
+        Lavandería especializada en el cuidado integral de prendas. Lavado tradicional, al seco, secado, planchado y delivery. Productos de calidad que protegen tus telas.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="https://wa.me/51913474275?text=Hola%2C%20deseo%20solicitar%20un%20servicio%20en%20LAVALUC"
+           target="_blank" class="btn btn--white btn--lg">
+          📲 Pedir por WhatsApp
+        </a>
+        <a href="#servicios" class="btn btn--ghost btn--lg">Ver servicios ↓</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hstat">
+          <span class="hstat__num" data-target="2000" data-suffix="+">0+</span>
+          <span class="hstat__label">Clientes atendidos</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat__num" data-target="3" data-suffix="h">0h</span>
+          <span class="hstat__label">Lavado express</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat__num" data-target="16" data-suffix="">0</span>
+          <span class="hstat__label">Categorías</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha: tarjetas flotantes -->
+    <div class="hero__cards reveal reveal--right">
+      <div class="hcard">
+        <div class="hcard__icon">🧺</div>
+        <div>
+          <span class="hcard__title">Lavado al kilo</span>
+          <span class="hcard__sub">Desde S/ 4 por kilo</span>
+        </div>
+      </div>
+      <div class="hcard">
+        <div class="hcard__icon">👔</div>
+        <div>
+          <span class="hcard__title">Terno al seco</span>
+          <span class="hcard__sub">Entregado en 24–48 h</span>
+        </div>
+      </div>
+      <div class="hcard">
+        <div class="hcard__icon">🚚</div>
+        <div>
+          <span class="hcard__title">Recojo a domicilio</span>
+          <span class="hcard__sub">Zonas cercanas disponibles</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero__wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,20 1440,40 L1440,80 L0,80 Z" fill="var(--foam)"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ================================================================
+     GALERÍA ANIMADA (scroll infinito)
+================================================================ -->
+<div class="gallery-strip">
+  <div class="gallery-strip__track">
+    <!-- Primer set -->
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_al_Kilo.jpg" alt="Lavado al kilo"/><span>Lavado al Kilo</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/LavadoPor_Kilo.jpg" alt="Ropa lavada"/><span>Ropa Doblada</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_Casacas.jpg" alt="Casacas"/><span>Casacas</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/lavado_Vestidos.jpg" alt="Vestidos"/><span>Vestidos</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_Ternos.jpg" alt="Ternos"/><span>Ternos</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_de_cubrecamas.jpg" alt="Cubrecamas"/><span>Cubrecamas</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_EdredonesDePluma.jpg" alt="Edredones"/><span>Edredones</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_Zapatilas.jpg" alt="Zapatillas"/><span>Zapatillas</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_casacaCuero.jpg" alt="Cuero"/><span>Casaca de Cuero</span></div>
+    <!-- Segundo set (copia para loop) -->
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_al_Kilo.jpg" alt="Lavado al kilo"/><span>Lavado al Kilo</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/LavadoPor_Kilo.jpg" alt="Ropa lavada"/><span>Ropa Doblada</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_Casacas.jpg" alt="Casacas"/><span>Casacas</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/lavado_Vestidos.jpg" alt="Vestidos"/><span>Vestidos</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_Ternos.jpg" alt="Ternos"/><span>Ternos</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_de_cubrecamas.jpg" alt="Cubrecamas"/><span>Cubrecamas</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_EdredonesDePluma.jpg" alt="Edredones"/><span>Edredones</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_Zapatilas.jpg" alt="Zapatillas"/><span>Zapatillas</span></div>
+    <div class="gallery-strip__item"><img src="Fotos/Lavado_casacaCuero.jpg" alt="Cuero"/><span>Casaca de Cuero</span></div>
+  </div>
+</div>
+
+<!-- ================================================================
+     SERVICIOS
+================================================================ -->
+<section class="section" id="servicios">
+  <div class="container">
+
+    <div class="sec-header reveal">
+      <span class="badge">✦ Lo que hacemos</span>
+      <h2 class="sec-header__title">Cuidado especializado<br/>para cada prenda</h2>
+      <p class="sec-header__sub">Más de 16 categorías de servicio. Desde ropa del día a día hasta vestidos de novia.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- 1 -->
+      <div class="svc-card reveal">
+        <div class="svc-card__photo">
+          <img src="Fotos/Lavado_al_Kilo.jpg" alt="Lavado normal al kilo"/>
+        </div>
+        <div class="svc-card__body">
+          <div class="svc-card__tag-row">
+            <span class="svc-card__cat">Lavado Normal</span>
+            <span class="svc-card__price">Desde S/ 4/kg</span>
+          </div>
+          <h3 class="svc-card__title">Lavado al Kilo</h3>
+          <p class="svc-card__desc">Paga solo por el peso. Ropa del día a día: polos, pantalones, camisas, buzos y más. Mínimo 3 kg.</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="svc-card reveal">
+        <div class="svc-card__photo">
+          <img src="Fotos/Lavado_Ternos.jpg" alt="Lavado al seco ternos"/>
+        </div>
+        <div class="svc-card__body">
+          <div class="svc-card__tag-row">
+            <span class="svc-card__cat">Lavado al Seco</span>
+            <span class="svc-card__price">Desde S/ 10</span>
+          </div>
+          <h3 class="svc-card__title">Lavado al Seco</h3>
+          <p class="svc-card__desc">Para prendas delicadas: ternos, abrigos, casacas de cuero y gamuza. Sin riesgo para telas finas.</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="svc-card reveal">
+        <div class="svc-card__photo">
+          <img src="Fotos/Lavado_de_cubrecamas.jpg" alt="Ropa de cama"/>
+        </div>
+        <div class="svc-card__body">
+          <div class="svc-card__tag-row">
+            <span class="svc-card__cat">Ropa de Cama</span>
+            <span class="svc-card__price">Desde S/ 10</span>
+          </div>
+          <h3 class="svc-card__title">Edredones y Cubrecamas</h3>
+          <p class="svc-card__desc">Edredones (1.5, 2 plazas, Queen, King), frazadas, cubrecamas, sábanas y almohadas.</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="svc-card reveal">
+        <div class="svc-card__photo">
+          <img src="Fotos/Lavado_Zapatilas.jpg" alt="Lavado de zapatillas"/>
+        </div>
+        <div class="svc-card__body">
+          <div class="svc-card__tag-row">
+            <span class="svc-card__cat">Zapatillas</span>
+            <span class="svc-card__price">Desde S/ 15/par</span>
+          </div>
+          <h3 class="svc-card__title">Zapatillas y Calzado</h3>
+          <p class="svc-card__desc">Zapatillas normales, deportivas premium, de gamuza, botas y zapatos de cuero. Limpieza profunda.</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="svc-card reveal">
+        <div class="svc-card__photo">
+          <img src="Fotos/lavado_Vestidos.jpg" alt="Vestidos de fiesta"/>
+        </div>
+        <div class="svc-card__body">
+          <div class="svc-card__tag-row">
+            <span class="svc-card__cat">Vestidos Especiales</span>
+            <span class="svc-card__price">Desde S/ 25</span>
+          </div>
+          <h3 class="svc-card__title">Vestidos y Ropa de Fiesta</h3>
+          <p class="svc-card__desc">Vestidos de novia, quinceañera, con pedrería, trajes de gala. El máximo cuidado para tus momentos especiales.</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="svc-card reveal">
+        <div class="svc-card__photo">
+          <img src="Fotos/Lavado_casacaCuero.jpg" alt="Casaca de cuero"/>
+        </div>
+        <div class="svc-card__body">
+          <div class="svc-card__tag-row">
+            <span class="svc-card__cat">Prendas Especiales</span>
+            <span class="svc-card__price">Desde S/ 15</span>
+          </div>
+          <h3 class="svc-card__title">Casacas y Abrigos</h3>
+          <p class="svc-card__desc">Casaca de cuero (S/ 60), gamuza (S/ 80), casacas normales y abrigos. Tratamiento por material.</p>
+        </div>
+      </div>
+
+    </div><!-- /services-grid -->
+
+    <!-- Chips de servicios adicionales -->
+    <div class="chips-row reveal">
+      <span class="chip">🎒 Carteras y Mochilas</span>
+      <span class="chip">🪟 Cortinas</span>
+      <span class="chip">🍽️ Mantelería</span>
+      <span class="chip">🧸 Peluches</span>
+      <span class="chip">🛁 Toallas y Batas</span>
+      <span class="chip">✂️ Reparación y Costura</span>
+      <span class="chip">🎨 Tinturado</span>
+      <span class="chip">🏫 Uniformes Escolares</span>
+      <span class="chip">💧 Secado Express</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     PRECIOS
+================================================================ -->
+<section class="section section--alt" id="precios">
+  <div class="container">
+
+    <div class="sec-header reveal">
+      <span class="badge badge--teal">💰 Tarifas 2025</span>
+      <h2 class="sec-header__title">Precios claros,<br/>sin sorpresas</h2>
+      <p class="sec-header__sub">Más de 100 artículos con precio fijo. Selecciona la categoría que necesitas.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="price-tabs reveal" id="priceTabs">
+      <button class="price-tab active" data-cat="lavnormal">🧺 Lavado Normal</button>
+      <button class="price-tab" data-cat="lavseco">👔 Al Seco</button>
+      <button class="price-tab" data-cat="cama">🛏️ Ropa de Cama</button>
+      <button class="price-tab" data-cat="zapatillas">👟 Zapatillas</button>
+      <button class="price-tab" data-cat="planchado">👕 Planchado</button>
+      <button class="price-tab" data-cat="secado">💨 Secado</button>
+      <button class="price-tab" data-cat="vestidos">💍 Vestidos Fiesta</button>
+      <button class="price-tab" data-cat="costura">✂️ Costura</button>
+      <button class="price-tab" data-cat="otros">📦 Más categorías</button>
+    </div>
+
+    <!-- Paneles de precios -->
+    <div class="price-panels reveal">
+
+      <div class="price-panel active" id="cat-lavnormal">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Prenda</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td>Ropa al kilo</td><td class="price">S/ 4.00</td><td class="unit">Kg</td></tr>
+              <tr><td>Polo</td><td class="price">S/ 6.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Short</td><td class="price">S/ 6.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Ropa interior / Medias</td><td class="price">S/ 6.00</td><td class="unit">Docena</td></tr>
+              <tr><td>Gorros / Sombreros</td><td class="price">S/ 5.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Blusa</td><td class="price">S/ 8.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Camisa</td><td class="price">S/ 8.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Pantalón jeans</td><td class="price">S/ 8.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Falda corta</td><td class="price">S/ 9.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Pantalón de tela</td><td class="price">S/ 9.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Polera</td><td class="price">S/ 10.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Chompa</td><td class="price">S/ 12.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Falda larga</td><td class="price">S/ 12.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Casaca</td><td class="price">S/ 15.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Vestido casual</td><td class="price">S/ 15.00</td><td class="unit">Pza</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="price-panel" id="cat-lavseco">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Prenda</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td>Corbata</td><td class="price">S/ 5.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Chaleco</td><td class="price">S/ 8.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Pantalón de vestir</td><td class="price">S/ 10.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Saco</td><td class="price">S/ 15.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Saco largo</td><td class="price">S/ 20.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Abrigo</td><td class="price">S/ 25.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Terno 2 piezas</td><td class="price">S/ 25.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Terno 3 piezas</td><td class="price">S/ 30.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Casaca de cuero</td><td class="price">S/ 60.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Casaca de gamuza</td><td class="price">S/ 80.00</td><td class="unit">Pza</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="price-panel" id="cat-cama">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Artículo</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td>Funda de almohada</td><td class="price">S/ 3.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Juego de sábanas</td><td class="price">S/ 10.00</td><td class="unit">Juego</td></tr>
+              <tr><td>Almohada</td><td class="price">S/ 12.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Manta polar</td><td class="price">S/ 15.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Edredón 1.5 plazas</td><td class="price">S/ 20.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Edredón 2 plazas</td><td class="price">S/ 25.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Frasada</td><td class="price">S/ 24.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Cubre cama</td><td class="price">S/ 28.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Edredón Queen</td><td class="price">S/ 30.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Edredón King</td><td class="price">S/ 35.00</td><td class="unit">Pza</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="price-panel" id="cat-zapatillas">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Calzado</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td>Zapatillas normales</td><td class="price">S/ 15.00</td><td class="unit">Par</td></tr>
+              <tr><td>Zapatillas de gamuza</td><td class="price">S/ 20.00</td><td class="unit">Par</td></tr>
+              <tr><td>Zapatos de cuero</td><td class="price">S/ 20.00</td><td class="unit">Par</td></tr>
+              <tr><td>Zapatillas deportivas premium</td><td class="price">S/ 25.00</td><td class="unit">Par</td></tr>
+              <tr><td>Botas / Botines</td><td class="price">S/ 25.00</td><td class="unit">Par</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="price-panel" id="cat-planchado">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Prenda</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td>Pantalón</td><td class="price">S/ 3.50</td><td class="unit">Pza</td></tr>
+              <tr><td>Blusa / Camisa</td><td class="price">S/ 4.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Planchado por kilo</td><td class="price">S/ 8.00</td><td class="unit">Kg</td></tr>
+              <tr><td>Vestido casual</td><td class="price">S/ 8.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Terno completo</td><td class="price">S/ 12.00</td><td class="unit">Juego</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="price-panel" id="cat-secado">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Prenda</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td>Secado por kilo</td><td class="price">S/ 3.00</td><td class="unit">Kg</td></tr>
+              <tr><td>Polo / Short</td><td class="price">S/ 3.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Pantalón (jeans/tela)</td><td class="price">S/ 4.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Camisa / Blusa</td><td class="price">S/ 4.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Falda</td><td class="price">S/ 4.50</td><td class="unit">Pza</td></tr>
+              <tr><td>Polera</td><td class="price">S/ 5.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Chompa</td><td class="price">S/ 6.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Casaca</td><td class="price">S/ 7.50</td><td class="unit">Pza</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="price-panel" id="cat-vestidos">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Artículo</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td>Vestido corto</td><td class="price">S/ 25.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Vestido largo</td><td class="price">S/ 30.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Velo de novia</td><td class="price">S/ 30.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Vestido delicado</td><td class="price">S/ 35.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Traje de gala de hombre</td><td class="price">S/ 35.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Vestido con pedrería</td><td class="price">S/ 40.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Vestido de quinceañera</td><td class="price">S/ 150.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Vestido de novia simple</td><td class="price">S/ 180.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Vestido de novia con aplicaciones</td><td class="price">S/ 300.00</td><td class="unit">Pza</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="price-panel" id="cat-costura">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Servicio</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td>Costura de botón</td><td class="price">S/ 4.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Basta de pantalón / falda</td><td class="price">S/ 8.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Cambio de cierre</td><td class="price">S/ 10.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Remiendo simple</td><td class="price">S/ 10.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Ajuste de cintura</td><td class="price">S/ 12.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Zurcido invisible</td><td class="price">S/ 15.00</td><td class="unit">Pza</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="price-panel" id="cat-otros">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Artículo</th><th>Precio</th><th>Unidad</th></tr></thead>
+            <tbody>
+              <tr><td class="table-subheader" colspan="3">🎒 Carteras y Bolsos</td></tr>
+              <tr><td>Billetera / Monedero</td><td class="price">S/ 8.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Cartera pequeña</td><td class="price">S/ 14.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Mochila</td><td class="price">S/ 15.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Cartera grande</td><td class="price">S/ 20.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Maletín</td><td class="price">S/ 20.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Cartera de cuero</td><td class="price">S/ 30.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Maleta de viaje</td><td class="price">S/ 35.00</td><td class="unit">Pza</td></tr>
+              <tr><td class="table-subheader" colspan="3">🧸 Peluches</td></tr>
+              <tr><td>Peluche pequeño</td><td class="price">S/ 12.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Peluche mediano</td><td class="price">S/ 15.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Peluche grande</td><td class="price">S/ 25.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Peluche gigante</td><td class="price">S/ 45.00</td><td class="unit">Pza</td></tr>
+              <tr><td class="table-subheader" colspan="3">🪟 Cortinas</td></tr>
+              <tr><td>Cenefa</td><td class="price">S/ 10.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Cortina por paño</td><td class="price">S/ 18.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Cortina Blackout</td><td class="price">S/ 25.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Cortina roller</td><td class="price">S/ 30.00</td><td class="unit">m²</td></tr>
+              <tr><td class="table-subheader" colspan="3">🏫 Uniformes Escolares</td></tr>
+              <tr><td>Corbata escolar</td><td class="price">S/ 3.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Camisa / Blusa escolar</td><td class="price">S/ 5.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Pantalón / Falda escolar</td><td class="price">S/ 6.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Mandil / Guardapolvo</td><td class="price">S/ 6.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Chompa escolar</td><td class="price">S/ 7.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Buzo escolar completo</td><td class="price">S/ 12.00</td><td class="unit">Juego</td></tr>
+              <tr><td class="table-subheader" colspan="3">🎨 Tinturado</td></tr>
+              <tr><td>Polo</td><td class="price">S/ 12.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Polera sin letras</td><td class="price">S/ 15.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Jean / Dril</td><td class="price">S/ 18.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Casaca normal</td><td class="price">S/ 20.00</td><td class="unit">Pza</td></tr>
+              <tr><td>Saco</td><td class="price">S/ 25.00</td><td class="unit">Pza</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div><!-- /price-panels -->
+
+    <div class="price-note reveal">
+      <div class="price-note__icon">💡</div>
+      <p>¿No encuentras tu prenda? Escríbenos y te cotizamos al instante. <strong>¡Sin compromiso!</strong></p>
+      <a href="https://wa.me/51913474275?text=Hola%2C%20quiero%20cotizar%20un%20servicio" target="_blank" class="btn btn--primary btn--sm">Cotizar por WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     CÓMO FUNCIONA
+================================================================ -->
+<section class="section section--cyan" id="como-funciona">
+  <div class="container">
+
+    <div class="sec-header reveal">
+      <span class="badge badge--lavend">✦ El proceso</span>
+      <h2 class="sec-header__title">4 pasos, ropa lista</h2>
+      <p class="sec-header__sub">¡Lavado y secado en solo 3 horas con nuestro servicio express!</p>
+    </div>
+
+    <div class="steps-grid">
+
+      <div class="step-card reveal">
+        <div class="step-card__num">01</div>
+        <div class="step-card__icon step-card__icon--1">📋</div>
+        <h3 class="step-card__title">Solicitas</h3>
+        <p class="step-card__desc">Por WhatsApp o el formulario web. Elige servicio, cantidad y horario preferido.</p>
+      </div>
+
+      <div class="step-card reveal">
+        <div class="step-card__num">02</div>
+        <div class="step-card__icon step-card__icon--2">🚪</div>
+        <h3 class="step-card__title">Traes o Recogemos</h3>
+        <p class="step-card__desc">Visítanos en Av. Canadá 3656 o coordinamos un recojo a domicilio en zonas cercanas.</p>
+      </div>
+
+      <div class="step-card reveal">
+        <div class="step-card__num">03</div>
+        <div class="step-card__icon step-card__icon--3">🧺</div>
+        <h3 class="step-card__title">Lavamos</h3>
+        <p class="step-card__desc">Tratamiento con productos de calidad y maquinaria moderna. Cuidado personalizado por prenda.</p>
+      </div>
+
+      <div class="step-card reveal">
+        <div class="step-card__num">04</div>
+        <div class="step-card__icon step-card__icon--4">✨</div>
+        <h3 class="step-card__title">Entregamos</h3>
+        <p class="step-card__desc">Tu ropa limpia, bien doblada y perfumada. Entregamos o te avisamos cuando está lista.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     NOSOTROS
+================================================================ -->
+<section class="section" id="nosotros">
+  <div class="container about-inner">
+
+    <!-- Visual con fotos reales -->
+    <div class="about-photos reveal reveal--left">
+      <img src="Fotos/lavanderia.jpeg" alt="Interior LAVALUC" class="about-photo about-photo--main"/>
+      <img src="Fotos/LavadoPor_Kilo.jpg" alt="Ropa lavada" class="about-photo about-photo--sm1"/>
+      <img src="Fotos/Lavado_EdredonesDePluma.jpg" alt="Edredones" class="about-photo about-photo--sm2"/>
+      <div class="about-badge">
+        <span class="about-badge__num">+5</span>
+        <span class="about-badge__label">años de experiencia</span>
+      </div>
+    </div>
+
+    <div class="about-content reveal reveal--right">
+      <span class="badge">🧺 Quiénes somos</span>
+      <h2 class="sec-header__title" style="text-align:left; margin-bottom:1rem;">Nacimos para cuidar<br/>cada prenda como tuya</h2>
+
+      <p class="about-content__text">
+        <strong>LavaLuc</strong> es una lavandería especializada en el cuidado integral de prendas, ofreciendo servicios de lavado tradicional, lavado al seco, secado, planchado y delivery a zonas cercanas.
+      </p>
+      <p class="about-content__text">
+        Nos enfocamos en brindar un servicio personalizado, adaptándonos a las necesidades de cada cliente y a las características de cada prenda — ya sean de uso diario, delicadas, de trabajo o de hogar.
+      </p>
+      <p class="about-content__text">
+        Nuestro compromiso es garantizar <strong>limpieza, frescura y cuidado en cada servicio</strong>, utilizando productos de calidad que protegen las telas.
+      </p>
+
+      <div class="about-pillars">
+        <div class="pillar">
+          <span class="pillar__emoji">⚡</span>
+          <div><span class="pillar__title">Express 3 horas</span><span class="pillar__sub">Lavado y secado ultra rápido</span></div>
+        </div>
+        <div class="pillar">
+          <span class="pillar__emoji">🌿</span>
+          <div><span class="pillar__title">Calidad Premium</span><span class="pillar__sub">Productos que cuidan tus telas</span></div>
+        </div>
+        <div class="pillar">
+          <span class="pillar__emoji">🔒</span>
+          <div><span class="pillar__title">Servicio Personalizado</span><span class="pillar__sub">Cada prenda, tratada distinto</span></div>
+        </div>
+        <div class="pillar">
+          <span class="pillar__emoji">🚚</span>
+          <div><span class="pillar__title">Delivery Disponible</span><span class="pillar__sub">Zonas cercanas a San Luis</span></div>
+        </div>
+      </div>
+
+      <div class="about-address">
+        <div class="about-address__icon">📍</div>
+        <div>
+          <strong>Encuéntranos aquí</strong>
+          <p>Av. Canadá 3656, San Luis — Lima, Perú</p>
+          <p>Lun–Sáb: 7:00 am – 8:00 pm &nbsp;|&nbsp; Dom: 8:00 am – 6:00 pm</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     TESTIMONIOS
+================================================================ -->
+<section class="section section--alt" id="testimonios">
+  <div class="container">
+
+    <div class="sec-header reveal">
+      <span class="badge badge--coral">❤️ Testimonios</span>
+      <h2 class="sec-header__title">Lo que dicen nuestros clientes</h2>
+      <p class="sec-header__sub">La satisfacción de nuestros clientes es nuestra mejor recompensa.</p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="testi-card reveal">
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__text">"Traje mi edredón King y quedó impecable. El precio es justo y el servicio fue muy rápido. ¡Ya soy cliente fija de LAVALUC!"</p>
+        <div class="testi-card__author">
+          <div class="testi-author__av">MP</div>
+          <div><span class="testi-author__name">María P.</span><span class="testi-author__loc">📍 San Luis</span></div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__text">"Lavaron mi casaca de cuero Michael Kors y quedó como nueva. Muy profesionales y atentos. ¡Totalmente recomendados!"</p>
+        <div class="testi-card__author">
+          <div class="testi-author__av" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">CR</div>
+          <div><span class="testi-author__name">Carlos R.</span><span class="testi-author__loc">📍 San Borja</span></div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__text">"Llevé el terno de mi hijo para su graduación. Quedó perfecto al seco, bien planchado y a tiempo. ¡Gracias LAVALUC!"</p>
+        <div class="testi-card__author">
+          <div class="testi-author__av" style="background:linear-gradient(135deg,#0D9488,#0F766E)">LG</div>
+          <div><span class="testi-author__name">Lucía G.</span><span class="testi-author__loc">📍 La Victoria</span></div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-card__stars">★★★★★</div>
+        <p class="testi-card__text">"El servicio al kilo es lo mejor. Dejo toda la ropa de la semana y en horas ya la tengo limpia, doblada y perfumada."</p>
+        <div class="testi-card__author">
+          <div class="testi-author__av" style="background:linear-gradient(135deg,#F59E0B,#D97706)">JT</div>
+          <div><span class="testi-author__name">Jorge T.</span><span class="testi-author__loc">📍 Ate Vitarte</span></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     CONTACTO
+================================================================ -->
+<section class="section" id="contacto">
+  <div class="container contact-inner">
+
+    <!-- Info -->
+    <div class="contact-info reveal">
+      <span class="badge badge--amber">📲 Contáctanos</span>
+      <h2 class="contact-info__title">¿Listo para ropa<br/>siempre limpia?</h2>
+      <p class="contact-info__lead">Completa el formulario o escríbenos directo. Te respondemos en minutos.</p>
+
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="contact-detail__icon">📍</div>
+          <div><strong>Dirección</strong>Av. Canadá 3656, San Luis — Lima, Perú</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail__icon">📱</div>
+          <div><strong>WhatsApp</strong>+51 913 474 275</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail__icon">🕐</div>
+          <div><strong>Horario</strong>Lun–Sáb: 7am – 8pm &nbsp;|&nbsp; Dom: 8am – 6pm</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail__icon">⚡</div>
+          <div><strong>Express</strong>Lavado y secado listo en solo 3 horas</div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/51913474275?text=Hola%20LAVALUC%2C%20deseo%20solicitar%20un%20servicio" target="_blank" class="btn btn--primary btn--lg">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escribir por WhatsApp
+      </a>
+
+      <!-- Mapa -->
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.442654388485!2d-76.9947978!3d-12.0818317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7c2512f43d3%3A0x8f7d98d249d97f2d!2sAv.%20Canad%C3%A1%203656%2C%20San%20Luis%2015021%2C%20Per%C3%BA!5e0!3m2!1ses!2s!4v1700000000000!5m2!1ses!2s"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <form class="contact-form reveal reveal--right" id="contactForm" novalidate>
+      <div class="form-field">
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan García" required/>
+        <span class="form-error" id="error-nombre"></span>
+      </div>
+      <div class="form-field">
+        <label for="telefono">Teléfono / WhatsApp *</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 913 474 275" required/>
+        <span class="form-error" id="error-telefono"></span>
+      </div>
+      <div class="form-field">
+        <label for="direccion">Dirección (si solicitas recojo) *</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ej: Calle Los Álamos 123, San Luis" required/>
+        <span class="form-error" id="error-direccion"></span>
+      </div>
+      <div class="form-field">
+        <label for="servicio">Servicio requerido *</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">— Selecciona un servicio —</option>
+          <option value="lavnormal">🧺 Lavado Normal / Al Kilo</option>
+          <option value="lavseco">👔 Lavado al Seco</option>
+          <option value="planchado">👕 Planchado</option>
+          <option value="secado">💨 Secado Express</option>
+          <option value="cama">🛏️ Ropa de Cama (edredones, cubrecamas)</option>
+          <option value="zapatillas">👟 Zapatillas / Calzado</option>
+          <option value="vestidos">💍 Vestidos de Fiesta / Novia</option>
+          <option value="cortinas">🪟 Cortinas</option>
+          <option value="peluches">🧸 Peluches</option>
+          <option value="carteras">🎒 Carteras / Mochilas</option>
+          <option value="costura">✂️ Reparación y Costura</option>
+          <option value="uniformes">🏫 Uniformes Escolares</option>
+          <option value="tinturado">🎨 Tinturado</option>
+          <option value="manteleria">🍽️ Mantelería</option>
+          <option value="toallas">🛁 Toallas / Batas</option>
+          <option value="otro">📦 Otro servicio</option>
+        </select>
+        <span class="form-error" id="error-servicio"></span>
+      </div>
+      <div class="form-field">
+        <label for="mensaje">Mensaje adicional (opcional)</label>
+        <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntanos más sobre tu pedido..."></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full btn--lg" id="submitBtn">
+        <span class="btn__text">Enviar solicitud</span>
+        <span class="btn__spinner" hidden>⏳</span>
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+================================================================ -->
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <div class="footer__col">
+      <a href="#inicio" class="logo logo--light">
+        <div class="logo__mark">🧺</div>
+        <span class="logo__text">LAVA<span>LUC</span></span>
+      </a>
+      <p class="footer__tagline">Tu ropa limpia, tu tiempo libre.<br/>San Luis, Lima — Perú.</p>
+      <div class="footer__social">
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://wa.me/51913474275" target="_blank" class="social-btn" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#servicios">Lavado Normal / Kilo</a></li>
+        <li><a href="#servicios">Lavado al Seco</a></li>
+        <li><a href="#servicios">Ropa de Cama</a></li>
+        <li><a href="#servicios">Zapatillas</a></li>
+        <li><a href="#servicios">Vestidos de Fiesta</a></li>
+        <li><a href="#servicios">Planchado y Secado</a></li>
+        <li><a href="#servicios">Reparación y Costura</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contacto</h4>
+      <p>📍 Av. Canadá 3656, San Luis</p>
+      <p>📱 +51 913 474 275</p>
+      <p>✉️ lavaluc@gmail.com</p>
+      <p>🕐 Lun–Sáb: 7am – 8pm</p>
+      <p>🕐 Dom: 8am – 6pm</p>
+      <p>⚡ Express en 3 horas</p>
+    </div>
+
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <p>© 2025 LAVALUC. Todos los derechos reservados. | Lavandería profesional — San Luis, Lima, Perú</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================================================================
+     WHATSAPP FLOTANTE
+================================================================ -->
+<a href="https://wa.me/51913474275?text=Hola%20LAVALUC%2C%20deseo%20solicitar%20un%20servicio"
+   class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp LAVALUC">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span class="wa-btn__label">WhatsApp</span>
+</a>
+
+<!-- ================================================================
+     MODAL ÉXITO
+================================================================ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal__icon">🎉</div>
+    <h3 class="modal__title">¡Solicitud enviada!</h3>
+    <p class="modal__text">Gracias por elegir LAVALUC. Nos comunicamos contigo en los próximos <strong>30 minutos</strong>.</p>
+    <p class="modal__sub">También puedes escribirnos directo al <strong>+51 913 474 275</strong></p>
+    <button class="btn btn--primary" id="modalClose">Entendido ✓</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
