@@ -776,7 +776,8 @@
     </div>
 
     <!-- Formulario -->
-    <form class="contact-form reveal reveal--right" id="contactForm" novalidate>
+     <form class="contact-form reveal reveal--right" id="contactForm" 
+     name="solicitud-lavanderia" method="POST" data-netlify="true" novalidate>
       <div class="form-field">
         <label for="nombre">Nombre completo *</label>
         <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan García" required/>
@@ -824,6 +825,7 @@
         <span class="btn__spinner" hidden>...</span>
       </button>
     </form>
+    <input type="hidden" name="form-name" value="solicitud-lavanderia" />
 
   </div>
 </section>
@@ -889,7 +891,7 @@
   </div>
   <div class="footer__bottom">
     <div class="container">
-      <p>© 2025 LAVALUC. Todos los derechos reservados. | Lavandería profesional — San Luis, Lima, Perú</p>
+      <p>© 2026 LAVALUC. Todos los derechos reservados. | Lavandería profesional — San Luis, Lima, Perú</p>
     </div>
   </div>
 </footer>
