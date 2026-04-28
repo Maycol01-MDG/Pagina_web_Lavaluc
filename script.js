@@ -150,28 +150,61 @@
 })();
 
 /* ----------------------------------------------------------------
-   7. FORMULARIO — validación + modal éxito
+   7. FORMULARIO â€” validacion + envio a WhatsApp
 ---------------------------------------------------------------- */
 (function () {
-  const form    = document.getElementById('contactForm');
+  const form = document.getElementById('contactForm');
   const overlay = document.getElementById('modalOverlay');
   const btnClose = document.getElementById('modalClose');
+  const whatsappNumber = '51913474275';
   if (!form) return;
 
   const rules = {
-    nombre:   { fn: v => v.trim().length >= 3,                  msg: 'Ingresa tu nombre completo (mín. 3 caracteres).' },
-    telefono: { fn: v => /^[\d\s\+\-]{7,15}$/.test(v.trim()),   msg: 'Teléfono inválido (7–15 dígitos).' },
-    direccion:{ fn: v => v.trim().length >= 8,                  msg: 'Ingresa tu dirección completa.' },
-    servicio: { fn: v => v !== '',                               msg: 'Selecciona un servicio.' },
+    nombre:   { fn: v => v.trim().length >= 3,                msg: 'Ingresa tu nombre completo (min. 3 caracteres).' },
+    telefono: { fn: v => /^[\d\s\+\-]{7,15}$/.test(v.trim()), msg: 'Telefono invalido (7-15 digitos).' },
+    direccion:{ fn: v => v.trim().length >= 8,                msg: 'Ingresa tu direccion completa.' },
+    servicio: { fn: v => v !== '',                            msg: 'Selecciona un servicio.' },
   };
 
   function validate(name) {
-    const el  = form.elements[name];
+    const el = form.elements[name];
     const err = document.getElementById(`error-${name}`);
-    const ok  = rules[name].fn(el.value);
+    const ok = rules[name].fn(el.value);
     if (err) err.textContent = ok ? '' : rules[name].msg;
     el.classList.toggle('error', !ok);
     return ok;
+  }
+
+  function fieldValue(name) {
+    return (form.elements[name]?.value || '').trim();
+  }
+
+  function selectedServiceLabel() {
+    const select = form.elements.servicio;
+    return select.options[select.selectedIndex]?.textContent.trim() || 'No especificado';
+  }
+
+  function buildWhatsappMessage() {
+    const lines = [
+      'Hola LAVALUC, deseo una cotizacion.',
+      '',
+      `Nombre: ${fieldValue('nombre')}`,
+      `Telefono / WhatsApp: ${fieldValue('telefono')}`,
+      `Direccion: ${fieldValue('direccion')}`,
+      `Servicio requerido: ${selectedServiceLabel()}`,
+    ];
+
+    const message = fieldValue('mensaje');
+    if (message) lines.push(`Mensaje adicional: ${message}`);
+
+    lines.push('', 'Quedo atento(a) a la cotizacion. Gracias.');
+    return lines.join('\n');
+  }
+
+  function openWhatsappQuote() {
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(buildWhatsappMessage())}`;
+    const opened = window.open(url, '_blank', 'noopener,noreferrer');
+    if (!opened) window.location.href = url;
   }
 
   Object.keys(rules).forEach(name => {
@@ -189,25 +222,28 @@
       return;
     }
 
-    const btn  = document.getElementById('submitBtn');
+    const btn = document.getElementById('submitBtn');
     const text = btn.querySelector('.btn__text');
     const spin = btn.querySelector('.btn__spinner');
+
     btn.disabled = true;
-    text.textContent = 'Enviando…';
+    text.textContent = 'Abriendo WhatsApp...';
     spin.hidden = false;
+
+    openWhatsappQuote();
 
     setTimeout(() => {
       btn.disabled = false;
-      text.textContent = 'Enviar solicitud';
+      text.textContent = 'Enviar solicitud por WhatsApp';
       spin.hidden = true;
       form.reset();
-      overlay.classList.add('open');
-    }, 1500);
+      overlay?.classList.add('open');
+    }, 700);
   });
 
-  const closeModal = () => overlay.classList.remove('open');
+  const closeModal = () => overlay?.classList.remove('open');
   btnClose?.addEventListener('click', closeModal);
-  overlay.addEventListener('click', e => e.target === overlay && closeModal());
+  overlay?.addEventListener('click', e => e.target === overlay && closeModal());
   document.addEventListener('keydown', e => e.key === 'Escape' && closeModal());
 })();
 

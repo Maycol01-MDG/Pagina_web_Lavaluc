@@ -1545,3 +1545,11 @@ h1,h2,h3,h4,h5,h6 { letter-spacing:0; }
   .trust-strip__inner { grid-template-columns:1fr; }
   .price-tab { min-height:40px; }
 }
+
+/* Galeria ampliada con todas las fotos reales */
+.gallery-strip__track { animation-duration:46s; }
+.gallery-strip__item {
+  width:180px;
+  height:128px;
+}
+.gallery-strip__item img { object-position:center; }
