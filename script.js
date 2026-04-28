@@ -239,7 +239,7 @@ document.querySelectorAll('.logo').forEach(logo => {
    10. LOG
 ---------------------------------------------------------------- */
 console.log(
-  '%c🧺 LAVALUC%c v2.0 — cargado ✓',
+  '%cLAVALUC%c v2.0 — cargado',
   'color:#17C3CE;font-weight:800;font-size:1rem;',
   'color:#4A6572'
 );

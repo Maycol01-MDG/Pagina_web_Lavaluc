@@ -1280,3 +1280,268 @@ td.unit  { color:var(--muted); font-size:.82rem; }
   .price-tab { font-size:.75rem; padding:.4rem .85rem; }
   .gallery-strip__item { width:140px; height:100px; }
 }
+
+/* ================================================================
+   Ajustes profesionales LAVALUC
+================================================================ */
+.svg-sprite { position:absolute; width:0; height:0; overflow:hidden; }
+.ui-icon {
+  width:1.05em;
+  height:1.05em;
+  flex:0 0 auto;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  fill:none;
+}
+
+:root {
+  --cyan:#10B8C7;
+  --cyan-dk:#087D8A;
+  --cyan-lt:#DDF7FA;
+  --cyan-xlt:#F2FBFC;
+  --teal:#0F766E;
+  --teal-lt:#D7F5EF;
+  --coral:#E76F51;
+  --coral-lt:#FCE8E2;
+  --amber:#C98919;
+  --dark:#102333;
+  --dark-2:#18364A;
+  --mid:#45616F;
+  --muted:#667F8C;
+  --border:#D5E8ED;
+  --bg:#F4FAFB;
+  --foam:#FAFEFF;
+  --r-lg:1rem;
+  --r-xl:1.25rem;
+  --sh-cyan:0 10px 28px rgba(16,184,199,.22);
+}
+
+h1,h2,h3,h4,h5,h6 { letter-spacing:0; }
+.header { background:rgba(250,254,255,.94); }
+.header.scrolled { box-shadow:0 10px 28px rgba(16,35,51,.08); }
+
+.logo__mark {
+  width:46px;
+  height:46px;
+  padding:4px;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:0 8px 24px rgba(16,35,51,.10);
+  overflow:hidden;
+}
+.logo__mark img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:8px;
+}
+.logo__text span { color:var(--cyan-dk); }
+.logo--light .logo__mark { background:rgba(255,255,255,.92); }
+
+.btn .ui-icon,
+.price-tab .ui-icon,
+.badge .ui-icon { width:1rem; height:1rem; }
+.btn--primary {
+  background:linear-gradient(135deg,var(--cyan),var(--teal));
+  border-color:transparent;
+}
+.btn--primary:hover { background:linear-gradient(135deg,var(--cyan-dk),var(--teal)); }
+
+.badge {
+  border:1px solid rgba(16,184,199,.18);
+  background:var(--cyan-xlt);
+  color:var(--cyan-dk);
+}
+
+.hero { min-height:92svh; }
+.hero__bg-photo {
+  background-image:
+    linear-gradient(90deg,rgba(7,26,39,.86) 0%,rgba(7,26,39,.68) 42%,rgba(7,26,39,.24) 100%),
+    url('Fotos/FachadaLavandera.jpg');
+  background-position:center;
+}
+.hero__bubbles { display:none; }
+.hero__eyebrow {
+  background:rgba(255,255,255,.14);
+  border-color:rgba(255,255,255,.28);
+}
+.hero__eyebrow::before { content:''; width:.45rem; height:.45rem; border-radius:50%; background:#5EEAD4; }
+.hero__title em {
+  color:#83F3ED;
+  background:none;
+  -webkit-text-fill-color:currentColor;
+}
+.hero__subtitle { color:rgba(255,255,255,.88); }
+.hero__stats {
+  max-width:560px;
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:18px;
+  padding:1.25rem;
+  backdrop-filter:blur(12px);
+}
+.hstat__label { color:rgba(255,255,255,.72); }
+
+.hcard {
+  max-width:360px;
+  min-height:104px;
+  padding:1rem;
+  border-radius:18px;
+  background:rgba(255,255,255,.16);
+}
+.hcard__photo {
+  width:72px;
+  height:72px;
+  padding:0;
+  overflow:hidden;
+  border-radius:14px;
+  background:rgba(255,255,255,.22);
+}
+.hcard__photo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.trust-strip {
+  background:var(--white);
+  border-block:1px solid var(--border);
+  padding-block:1.25rem;
+}
+.trust-strip__inner {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1rem;
+}
+.trust-item {
+  display:flex;
+  align-items:flex-start;
+  gap:.8rem;
+  padding:1rem;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:linear-gradient(180deg,#fff 0%,var(--cyan-xlt) 100%);
+}
+.trust-item__icon {
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  color:var(--cyan-dk);
+  background:var(--cyan-lt);
+  flex:0 0 auto;
+}
+.trust-item strong {
+  display:block;
+  font-family:var(--font-display);
+  font-size:.9rem;
+  color:var(--dark);
+}
+.trust-item span:last-child {
+  display:block;
+  font-size:.8rem;
+  line-height:1.45;
+  color:var(--muted);
+}
+
+.svc-card {
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(16,35,51,.06);
+}
+.svc-card__photo { height:205px; }
+.svc-card__cat { color:var(--cyan-dk); background:var(--cyan-xlt); }
+.svc-card__price { color:var(--teal); }
+
+.chip {
+  gap:.45rem;
+  background:var(--white);
+  border-color:var(--border);
+  box-shadow:0 5px 18px rgba(16,35,51,.04);
+}
+.chip__icon {
+  width:20px;
+  height:20px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:var(--cyan-dk);
+  background:var(--cyan-lt);
+}
+.chip__icon .ui-icon { width:.78rem; height:.78rem; }
+
+.price-tab {
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  border-radius:12px;
+}
+.price-tab.active {
+  background:linear-gradient(135deg,var(--cyan),var(--teal));
+  border-color:transparent;
+}
+
+.price-note__icon,
+.step-card__icon,
+.pillar__emoji,
+.about-address__icon,
+.contact-detail__icon,
+.modal__icon {
+  display:grid;
+  place-items:center;
+}
+.step-card__icon .ui-icon,
+.price-note__icon .ui-icon,
+.about-address__icon .ui-icon,
+.contact-detail__icon .ui-icon,
+.modal__icon .ui-icon { width:1.25em; height:1.25em; }
+.pillar__emoji {
+  width:38px;
+  height:38px;
+  border-radius:10px;
+  background:var(--cyan-lt);
+  color:var(--cyan-dk);
+}
+.pillar__emoji .ui-icon { width:1.05rem; height:1.05rem; }
+
+.testi-card__stars {
+  color:#D99B24;
+  letter-spacing:.12em;
+}
+.testi-author__loc { color:var(--muted); }
+
+.contact-detail { border-radius:14px; }
+.contact-detail__icon { color:var(--cyan-dk); }
+.footer { background:linear-gradient(160deg,#0B1E2B 0%,#123449 100%); }
+.footer__col p {
+  display:flex;
+  align-items:center;
+  gap:.45rem;
+}
+.footer__col p .ui-icon {
+  width:.95rem;
+  height:.95rem;
+  color:#70E1E8;
+}
+.modal__icon {
+  width:72px;
+  height:72px;
+  margin-inline:auto;
+  border-radius:50%;
+  color:var(--white);
+  background:linear-gradient(135deg,var(--cyan),var(--teal));
+  font-size:2rem;
+}
+
+@media (max-width:992px) {
+  .trust-strip__inner { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:640px) {
+  .hero { min-height:auto; }
+  .hero__stats { justify-content:flex-start; }
+  .trust-strip__inner { grid-template-columns:1fr; }
+  .price-tab { min-height:40px; }
+}
